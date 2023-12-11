@@ -1,11 +1,15 @@
-import { FunctionComponent } from "react";
+import { Metadata } from "next";
 
-interface PageProps {
-	
+export const metadata: Metadata = {
+  title: "Music App",
+  description: "Example music app using the components.",
 }
  
-const Page: FunctionComponent<PageProps> = async () => {
-	return ( <p>hello lang</p> );
+export default function Page(){
+	return ( 
+		<>
+			<div className="block w-[1000px] h-32 bg-green-300">This is a lang layout</div>
+		</>
+	 );
 }
  
-export default Page;
